@@ -1,0 +1,25 @@
+module.exports = class Output{
+  static renderContent(model){
+
+    let gridOuput = model.output()
+
+
+    return `
+      
+      <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 40px;
+            font-weight: bold;
+        }
+      </style>
+      
+      
+      ${gridOuput}
+      
+      
+      
+    
+    `
+  }
+}
