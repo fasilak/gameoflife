@@ -3,7 +3,9 @@ const Life = require('./Life')
 module.exports = class Grid{
 
   constructor(rows){
-    this.rows = rows.slice(0)
+    if(rows){
+      this.rows = rows.slice(0)
+    }
   }
 
 
